@@ -1,0 +1,118 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Header Stuff Here*/
+header {
+    background-color: #F2C1AE;
+    padding: 1rem 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #BF396A;
+}
+header p {
+    margin: 0;
+    color: #011826;
+    letter-spacing: .5px;
+}
+
+/* nav stuff goes here */
+nav {
+    background-color: #A66851;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #011826;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #BF396A;
+    color: #011826;
+}
+nav a:hover {
+    color:#F2C1AE;
+}
+
+
+/* stuff for the main */
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #BF396A;
+}
+
+main h2 {
+    color: #A66851;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #F2C1AE;
+}
+
+main dl dt {
+    color: #BF396A;
+    font-weight: 700;   
+}
+main dl dd {
+    color: #2f3133;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li{
+    line-height: normal;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #F2C1AE;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 2px solid #BF396A;
+    border-radius: .5rem;
+}
+main a {
+   color: #BF396A; 
+}
+main a:hover {
+   color: rgb(1,24,38); 
+}
+
+
+/* Footer Stuff Here*/
+footer {
+    background-color: #F2C1AE;
+    text-align: center;
+    color: #BF396A;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #BF396A;
+}
