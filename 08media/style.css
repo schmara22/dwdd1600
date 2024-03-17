@@ -1,0 +1,310 @@
+/*prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Header Stuff Here*/
+header {
+    background-color: #F2C1AE;
+    padding: 1rem 2vw;
+    display: flex;
+}
+header h1 {
+    margin: 0;
+    color: #BF396A;
+}
+header p {
+    margin: 0;
+    color: #011826;
+    letter-spacing: .5px;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+/* nav stuff goes here */
+
+/* small screens */
+@media only screen and (max-width:600px){
+    nav ul{
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a{
+        display: block;
+        padding: .8rem; 
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #8C501B;
+    }
+    nav .active a {
+        background-color: #A66851;
+        background-image: linear-gradient (to bottom, rgba(166,104,81,1) 45%);
+        color: white;
+    }
+
+    
+} /*end of the media query*/
+
+
+/* Big screens*/ 
+@media only screen and (min-width:601px){
+nav {
+    background-color: #A66851;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #011826;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #BF396A;
+    color: #011826;
+}
+nav a:hover {
+    color:#F2C1AE;
+}
+
+} /*end of the media query*/
+
+
+
+
+
+
+
+/* stuff for the main */
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #BF396A;
+}
+
+main h2 {
+    color: #A66851;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #F2C1AE;
+}
+
+main dl dt {
+    color: #BF396A;
+    font-weight: 700;   
+}
+main dl dd {
+    color: #2f3133;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+
+main ul li{
+    line-height: normal;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #F2C1AE;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 2px solid #BF396A;
+    border-radius: .5rem;
+}
+main a {
+   color: #BF396A; 
+}
+main a:hover {
+   color: rgb(1,24,38); 
+}
+
+
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+
+
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #BF396A;
+}
+
+.myForm fieldset {
+    border: 1px solid #BF396A;
+    border-radius: 3px;
+    margin-bottom: 1rem;     
+}
+
+.myForm legend {
+    color: #BF396A;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea, .myForm [type=email] {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm select, .myForm textarea, .myForm [type=email] {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(191,57,106,0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #BF396A;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+.bakinghero  {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+
+}
+
+.bakinghero img {
+    width: 100%;
+    height: auto;
+}
+
+figure.bakinghero figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+} 
+.gallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+    
+}
+.gallery span {
+    display: block;
+    text-align: center; 
+    font-weight: 700;
+    color: #895772;
+}
+.gallery img {
+    width: 98%;
+    height: auto;
+}
+
+.gallery img:hover {
+     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+
+table.our-activities {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.our-activities th{
+    background-color: #BF396A;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.our-activities td{
+    color:#BF396A;
+    padding: .4rem 2vw;
+    
+}
+table.our-activities tr:nth-child(odd){
+    background-color:#f7f7f7; 
+}
+table.our-activities tr:hover{
+    background-color: rgba(191,57,106,0.1);
+}
+
+
+
+
+/* Footer Stuff Here*/
+footer {
+    background-color: #F2C1AE;
+    text-align: center;
+    color: #BF396A;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: #BF396A;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
